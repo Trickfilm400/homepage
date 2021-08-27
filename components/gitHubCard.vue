@@ -18,6 +18,7 @@
 
           <span v-if='lang === "ts"' style='border-radius: 50%; background-color: #2B7489' class='w-5 h-5 inline-block align-text-bottom mr-3'></span>
           <span v-if='lang === "js"' style='border-radius: 50%; background-color: #F1E05A' class='w-5 h-5 inline-block align-text-bottom mr-3'></span>
+          <span v-if='lang === "vue"' style='border-radius: 50%; background-color: #41B883' class='w-5 h-5 inline-block align-text-bottom mr-3'></span>
           <span v-if='lang === "shell"' style='border-radius: 50%; background-color: #89E051' class='w-5 h-5 inline-block align-text-bottom mr-3'></span>
           {{ langMapping[lang] }}</p>
         <!-- STAR -->
@@ -44,12 +45,13 @@ export default class gitHubCard extends Vue {
   @Prop({required: true}) readonly linkTitle!: string;
   @Prop({required: true}) readonly linkUrl!: string;
   @Prop({required: true}) readonly description!: string;
-  @Prop({required: true}) readonly lang!: "ts" | "js" | "shell";
+  @Prop({required: true}) readonly lang!: "ts" | "js" | "vue" | "shell";
   @Prop({default: "0"}) readonly starscount: string = "0";
 
   langMapping = {
     "ts": "Typescript",
     "js": "Javascript",
+    "vue": "Vue",
     "shell": "Shell",
   }
 }
