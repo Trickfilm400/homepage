@@ -1,0 +1,14 @@
+<template>
+  <div class="w-100 h-100">
+    <div class="body">
+      <Header/>
+    </div>
+<!--    <Tutorial/>-->
+  </div>
+</template>
+
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({})
+</script>
