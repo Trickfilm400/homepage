@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'homepage',
+    title: "Trickfilm400's HomePage",
     htmlAttrs: {
       lang: 'en'
     },
