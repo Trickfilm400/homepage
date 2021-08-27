@@ -29,7 +29,7 @@
                   class=''></path>
           </svg>
         </div>
-        <p class='pb-4 pl-4 pt-3'>{{ starsCount }}</p>
+        <p class='pb-4 pl-4 pt-3'>{{ starscount }}</p>
       </div>
     </div>
   </div>
@@ -45,7 +45,7 @@ export default class gitHubCard extends Vue {
   @Prop({required: true}) readonly linkUrl!: string;
   @Prop({required: true}) readonly description!: string;
   @Prop({required: true}) readonly lang!: "ts" | "js" | "shell";
-  @Prop() starsCount: number = 0;
+  @Prop({default: "0"}) readonly starscount: string = "0";
 
   langMapping = {
     "ts": "Typescript",
