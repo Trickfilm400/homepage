@@ -1,8 +1,8 @@
 <template>
   <div class='block'>
     <h1 class='text-8xl italic text-gray-300 text-center'>Trickfilm400</h1>
-    <div class='pt-14'>
-      <img class='w-full h-96 rounded-2xl border-black border-2' :src='"/pb.JPG"' alt='ProfilePicture'>
+    <div class='pt-14 flex justify-center'>
+      <img class='h-96 rounded-2xl border-black border-2 object-cover object-center' :src='"/pb.JPG"' alt='ProfilePicture'>
     </div>
     <p class='text-white text-center text-3xl pt-6'>Hey there! 👋</p>
     <p class='text-white text-center pt-6'>
